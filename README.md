@@ -1,6 +1,6 @@
 MemoryReleaser
 ==========
-![ScreenShot](/screenshots/ss_1.png)
+![ScreenShot](/screenshots/ss_001.png)
 
 [Windows Server 2003 Resource Kit Tools](http://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=17657)に含まれるempty.exeを利用してWindowsPCのメモリを開放するサポートツールです。
 基本的には[MemoryFree](https://github.com/yagi2/MemoryFree)と同じです。
