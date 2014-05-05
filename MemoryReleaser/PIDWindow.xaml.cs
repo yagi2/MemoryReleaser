@@ -22,11 +22,11 @@ namespace MemoryReleaser
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PIDWindow : Window
     {
         private System.Diagnostics.PerformanceCounter MemF = null;
 
-        public MainWindow()
+        public PIDWindow()
         {
             InitializeComponent();
 
@@ -38,7 +38,7 @@ namespace MemoryReleaser
             MemF.NextValue();
             if (MemF != null)
             {
-                StatusLabel.Content = "FreeMemory: " + MemF.NextValue() + "MB";
+                InfoLabel.Content = "FreeMemory: " + MemF.NextValue() + "MB";
             }
         }
 
@@ -123,10 +123,8 @@ namespace MemoryReleaser
 
         void PID_Button_Click(object sender, RoutedEventArgs e)
         {
-            PIDWindow PIDWind = new PIDWindow();
-            PIDWind.Show();
-
-            //this.WindowState = WindowState.Minimized;
+            
+            this.WindowState = WindowState.Minimized;
         }
 
         void PNAME_Button_Click(object sender, RoutedEventArgs e)
